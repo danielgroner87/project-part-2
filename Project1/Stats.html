@@ -1,0 +1,87 @@
+Stats:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deni Avdija - Statistics</title>
+</head>
+    <body>
+        <nav>
+            <a href="Home.html">Home</a> |
+            <a href="Login.html">Login</a> |
+            <a href="Stats.html">Stats</a> |
+            <a href="Photos.html">Photos</a> |
+            <a href="Highlights.html">Highlights</a>
+        </nav> 
+
+        <h1>Deni Avdija - Game Statistics</h1>
+        <p>Here you can explore Deni's performance in recent games.</p>
+
+        <hr>
+
+        <h2>Basic Stats</h2>
+        <table border="1">
+            <tr>
+            <th>Date</th>
+            <th>Opponent</th>
+            <th>Points</th>
+            <th>Rebounds</th>
+            <th>Assists</th>
+            <th>Minutes</th>
+            </tr>
+            <tr>
+            <td>2025-04-04</td>
+            <td>Chicago Bulls</td>
+            <td>37</td>
+            <td>11</td>
+            <td>5</td>
+            <td>33</td>
+            </tr>
+            <tr>
+            <td>2025-04-01</td>
+            <td>Atlanta Hawks</td>
+            <td>32</td>
+            <td>15</td>
+            <td>10</td>
+            <td>36</td>
+            </tr>
+            <tr>
+            <td>2025-03-20</td>
+            <td>Memphis Grizzlies</td>
+            <td>31</td>
+            <td>16</td>
+            <td>3</td>
+            <td>34</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Advanced Stats</h2>
+        <ul>
+            <li>PER (Player Efficiency Rating): 21.8</li>
+            <li>Plus/Minus: +12.4</li>
+            <li>Effective FG% (eFG%): 58.3%</li>
+            <li>Usage Rate: 24.5%</li>
+            <li>Turnover Ratio: 9.1%</li>
+        </ul>
+
+        <hr>
+
+        <!-- לשים לב שאת החלק ממתחת יש לעצב עם JavaScript -->
+        <h3>Filter by stat type (placeholder only):</h3>
+        <p>Select a category to view specific statistics:</p>
+
+        <form>
+            <input type="radio" id="basic" name="stat-type" value="basic" checked>
+            <label for="basic">Basic</label><br>
+
+            <input type="radio" id="advanced" name="stat-type" value="advanced">
+            <label for="advanced">Advanced</label><br>
+
+            <input type="radio" id="all" name="stat-type" value="all">
+            <label for="all">Show All</label>
+        </form>
+    </body>
+</html>
