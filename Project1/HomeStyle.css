@@ -7,13 +7,15 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  
+
+
   nav {
-    background-color: #292b2c;
-    padding: 15px 0;
-    width: 100%;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #292b2c;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
   }
   
   nav a {
@@ -30,22 +32,27 @@ body {
     background-color: #5a5c5d;
   }
   
+  
   header {
-    background-image: url('https://katzr.net/abae73');
+    background-image: url(https://katzr.net/abae73);
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 200px;
+    height: 300px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px 20px;
+    
+
   }
   
   .header-overlay {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
+    padding: 50px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +104,33 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
   }
-  
+  @keyframes Moving-Symbol{
+    from{background-color: #b60505;}
+    to{background-color: #b9c4d1;}
+    
+  }
+  .portland{
+    background-color: #b60505;
+    animation-name: Moving-Symbol;
+    display: inline-block;
+    border-radius: 10px; 
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 5px; 
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    width: 100%;
+  }
+  .portland img{
+        display: block;
+        max-width: 52%; 
+        min-width: 4%;
+        height: auto;
+        align-items: center;
+      
+  }
   .quote-list {
     list-style-type: none;
     padding: 0;
