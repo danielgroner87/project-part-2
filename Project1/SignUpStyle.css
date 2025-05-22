@@ -1,1 +1,66 @@
+/* רקע כללי של הדף */
+body {
+  margin: 0;
+  font-family: 'Heebo', sans-serif;
+  background: linear-gradient(to right, #f8f8ff, #e0e0ff);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* כותרת עמוד */
+h2 {
+  margin-top: 40px;
+  font-size: 32px;
+  color: #292b2c;
+}
+
+/* עיצוב כללי לטופס */
+form {/*מעצב את קוביית הסקר*/
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* תוויות (Labels) */
+label {/*מעצב את כיתוב כותרות הסקר*/
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* תיבות הטופס*/
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* כפתור שליחה */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #292b2c;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #5a5c5d;
+}
 
