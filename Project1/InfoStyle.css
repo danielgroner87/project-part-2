@@ -1,0 +1,22 @@
+a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease; /* גורם לשינוי להיות חלק */
+  }
+  
+  a:hover {
+    color: red; /* הצבע החדש כשמרחפים עליו */
+  }
+
+  @keyframes ColorText{
+    0% {color:black;}
+    25% {color: blue;}
+    50% {color:blueviolet}
+    100% {color: brown;}
+  }
+  
+  h2{
+    animation-name: ColorText;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
