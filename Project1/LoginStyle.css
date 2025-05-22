@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background: linear-gradient(to right, #f8f8ff, #e0e0ff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav { /*הוא בעצם עובד על כל מה שתחת נאב.עובד על הניווט למעלה*/
+    text-align: center; 
+    background-color: #292b2c;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  nav a { /*עובד על הטקסט של הניווט*/
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {/* הובר זה פעולה שקוראת כהעכבר עובר מעל הכיתוב*/
+    background-color: #5a5c5d;
+  }
+  
+  head {
+    background-image: url(https://katzr.net/abae73);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  .login-container {
+    max-width: 400px;
+    width: 90%;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .login-container p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+ 
+  
+  input[type="text"],
+  input[type="password"] {/*חיפוש טייפ ספציפי*/
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #292b2c;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer; /*כשהעכבר עובר על הכפתור הוא הופך לסמן יד*/
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #5a5c5d;
+  }
+  
+  
+  
