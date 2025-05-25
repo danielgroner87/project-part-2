@@ -1,11 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="LoginStyle.css">
   <meta charset="UTF-8">
   <title>Deni Avdija - Login / Sign Up</title>
+  <link rel="stylesheet" href="LoginStyle.css"> <!--סופר חשוב כדי שיתחיל לעבוד-->
+
 </head>
 <body>
 
@@ -14,7 +13,7 @@
       <a href="Login.html">Login</a> |
       <a href="Stats.html">Stats</a> |
       <a href="Photos.html">Photos</a> |
-      <a href="info.html">Info</a>
+      <a href="Info.html">Info</a>
     </nav>
   
     <h1>Login</h1>
@@ -31,6 +30,43 @@
     </form>
   
     <p>Not registered yet? <a href="SignUp.html">Sign up here</a></p>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+    
+          const name = document.getElementById("login-name").value;
+          const password = document.getElementById("login-password").value;
+    
+          const storedName = localStorage.getItem("userName");
+          const storedPassword = localStorage.getItem("userPassword");
+    
+          if (!storedName || !storedPassword) {
+            alert("No users are registered yet. Please sign up first or try again");
+            window.location.href = "Login.html";
+            return;
+          }
+    
+          if (name !== storedName) {
+            alert("User not found. Please try again or SignUp");
+            window.location.href = "Login.html";
+            return;
+          }
+    
+          if (password === storedPassword) {
+            alert("Login successful!");
+            window.location.href = "Home.html";
+          } else {
+            alert("Incorrect password.");
+          }
+        });
+      });
+    </script>
+    
+    
   
   </body>
 </html>
