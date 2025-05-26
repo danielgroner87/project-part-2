@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -28,4 +28,31 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Incorrect password.");
       }
     });
+  });*/
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("login-name").value;
+    const password = document.getElementById("login-password").value;
+
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    const user = users.find(u => u.name === name);
+
+    if (!user) {
+      alert("User not found. Please sign up first.");
+      return;
+    }
+
+    if (user.password === password) {
+      alert("Login successful!");
+      window.location.href = "Home.html";
+    } else {
+      alert("Incorrect password.");
+    }
   });
+});
+
