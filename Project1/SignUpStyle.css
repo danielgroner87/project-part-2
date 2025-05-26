@@ -9,6 +9,15 @@ body {
   align-items: center;
 }
 
+  nav {
+    text-align: center;
+    background-color: #292b2c;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+  }
+  
 /* כותרת עמוד */
 h2 {
   margin-top: 40px;
