@@ -21,21 +21,21 @@
   const form = document.querySelector("form");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-
+// הגדרת ערכים למשתנים
     const name = document.getElementById("signup-name").value;
     const age = document.getElementById("signup-age").value;
     const password = document.getElementById("signup-password").value;
 
-    let users = JSON.parse(localStorage.getItem("users")) || [];
+    let users = JSON.parse(localStorage.getItem("users")) || []; // שומר הרבה יוזרים כאובייקטים
 
-    // check if user already exists
-    if (users.find(user => user.name === name)) {
+    
+    if (users.find(user => user.name === name)) { // בודק שהיוזר הזה לא קיים עדיין
       alert("User already exists. Please choose a different name.");
       return;
     }
 
     users.push({ name, age, password });
-    localStorage.setItem("users", JSON.stringify(users));
+    localStorage.setItem("users", JSON.stringify(users)); // מחזיר את האובייקטים לסטרינגים שנשמרים במחשב
 
     alert("Registration successful! You can now log in.");
     window.location.href = "Login.html";

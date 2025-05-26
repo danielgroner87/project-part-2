@@ -38,15 +38,15 @@
     const name = document.getElementById("login-name").value;
     const password = document.getElementById("login-password").value;
 
-    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const users = JSON.parse(localStorage.getItem("users")) || [];  // טוען את כל היוזרים הקיימים
 
-    const user = users.find(u => u.name === name);
+    const user = users.find(u => u.name === name); // מחפש את היוזר שהמשתמש הכניס
 
-    if (!user) {
+    if (!user) {  // כאשר לא מזוהה משתמש עם השם הזה
       alert("User not found. Please sign up first.");
       return;
     }
-
+// וידוא שהסיסמה שהוזנה נכונה
     if (user.password === password) {
       alert("Login successful!");
       window.location.href = "Home.html";
