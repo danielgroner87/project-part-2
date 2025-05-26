@@ -1,13 +1,21 @@
-SignUp:
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Deni Avdija - Login</title>
+  <script src="SignUpScript.js" defer></script>
+  <link rel="stylesheet" href="SignUpStyle.css">
 </head>
 
 <body>
+    <nav>
+    <a href="Home.html">Home</a> |
+    <a href="Login.html">Login</a> |
+    <a href="Stats.html">Stats</a> |
+    <a href="Photos.html">Photos</a> |
+    <a href="Info.html">Info</a> 
+  </nav>
+
   <h2>Sign Up</h2>
   <form action="#" method="post">
     <label for="signup-name">Name:</label><br>
@@ -19,15 +27,11 @@ SignUp:
     <label for="signup-password">Password:</label><br>
     <input type="password" id="signup-password" name="signup-password" required><br><br>
 
-    <label for="preference">Preferred content type:</label><br>
-    <select id="preference" name="preference">
-      <option value="stats">Statistics</option>
-      <option value="photos">Photos</option>
-      <option value="videos">Videos</option>
-      <option value="news">News Articles</option>
-    </select><br><br>
+    
 
     <input type="submit" value="Sign Up">
   </form>
+
+  
 </body>
 </html>

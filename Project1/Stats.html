@@ -1,8 +1,8 @@
-Stats:
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="StatsStyle.css">
   <meta charset="UTF-8">
   <title>Deni Avdija - Statistics</title>
 </head>
@@ -13,11 +13,15 @@ Stats:
             <a href="Stats.html">Stats</a> |
             <a href="Photos.html">Photos</a> |
             <a href="Info.html">Info</a>
+
         </nav> 
 
-        <h1>Deni Avdija - Game Statistics</h1>
-        <p>Here you can explore Deni's performance in recent games.</p>
-
+     <header>
+      <h1 style="font-family: 'Bebas Neue';">Statistics</h1>
+        <div class="subheading">View some of our beloved Deni's recent statistics</div>
+     </header>
+        
+        <div id="basicP">
         <hr>
 
         <h2>Basic Stats</h2>
@@ -55,10 +59,12 @@ Stats:
             <td>34</td>
             </tr>
         </table>
+        </div>
 
+        <div id="advancedP">
         <hr>
 
-        <h2>Advanced Stats</h2>
+        <h2 >Advanced Stats</h2>
         <ul>
             <li>PER (Player Efficiency Rating): 21.8</li>
             <li>Plus/Minus: +12.4</li>
@@ -68,19 +74,25 @@ Stats:
         </ul>
 
         <hr>
-
+        </div>
         <!-- לשים לב שאת החלק ממתחת יש לעצב עם JavaScript -->
         <h3>Filter by stat type (placeholder only):</h3>
         <p>Select a category to view specific statistics:</p>
 
         <form>
-            <input type="radio" id="basic" name="stat-type" value="basic" checked>
+           <input type="radio" id="basic" name="stat-type" value="basic"
+            onclick="document.getElementById('basicP').style.display='block';
+             document.getElementById('advancedP').style.display='none';">
             <label for="basic">Basic</label><br>
 
-            <input type="radio" id="advanced" name="stat-type" value="advanced">
+            <input type="radio" id="advanced" name="stat-type" value="advanced"
+            onclick="document.getElementById('basicP').style.display='none';
+             document.getElementById('advancedP').style.display='block';">
             <label for="advanced">Advanced</label><br>
 
-            <input type="radio" id="all" name="stat-type" value="all">
+            <input type="radio" id="all" name="stat-type" value="all" checked
+            onclick="document.getElementById('basicP').style.display='block';
+            document.getElementById('advancedP').style.display='block';">
             <label for="all">Show All</label>
         </form>
     </body>
