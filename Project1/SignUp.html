@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- מציין שהשפה הראשית של הדף היא אנגלית -->
 <head>
-  <meta charset="UTF-8">
-  <title>Deni Avdija - Login</title>
-  <script src="SignUpScript.js" defer></script>
-  <link rel="stylesheet" href="SignUpStyle.css">
+  <meta charset="UTF-8"> <!-- מאפשר תמיכה בתווים שונים כולל עברית -->
+  <title>Deni Avdija - SignUp</title> <!-- כותרת הדף שתופיע בטאב הדפדפן -->
+
+  <script src="SignUpScript.js" defer></script> <!-- קישור לקובץ JavaScript שיופעל רק אחרי טעינת הדף -->
+  <link rel="stylesheet" href="SignUpStyle.css"> <!-- קישור לקובץ עיצוב חיצוני -->
 </head>
 
 <body>
-    <nav>
+  <nav> <!-- תפריט ניווט עליון לכל חלקי האתר -->
     <a href="Home.html">Home</a> |
     <a href="Login.html">Login</a> |
     <a href="Stats.html">Stats</a> |
@@ -16,22 +17,19 @@
     <a href="Info.html">Info</a> 
   </nav>
 
-  <h2>Sign Up</h2>
-  <form action="#" method="post">
-    <label for="signup-name">Name:</label><br>
-    <input type="text" id="signup-name" name="signup-name" required><br><br>
+  <h2>Sign Up</h2> <!-- כותרת הטופס -->
 
-    <label for="signup-age">Age:</label><br>
-    <input type="number" id="signup-age" name="signup-age" required><br><br>
+  <form action="#" method="post"> <!-- טופס הרשמה; כרגע לא נשלח לשרת אמיתי -->
+    <label for="signup-name">Name:</label><br> <!-- תווית לשדה שם -->
+    <input type="text" id="signup-name" name="signup-name" required><br><br> <!-- שדה קלט לשם -->
 
-    <label for="signup-password">Password:</label><br>
-    <input type="password" id="signup-password" name="signup-password" required><br><br>
+    <label for="signup-age">Age:</label><br> <!-- תווית לשדה גיל -->
+    <input type="number" id="signup-age" name="signup-age" required><br><br> <!-- שדה מספר לגיל -->
 
-    
+    <label for="signup-password">Password:</label><br> <!-- תווית לשדה סיסמה -->
+    <input type="password" id="signup-password" name="signup-password" required><br><br> <!-- שדה סיסמה מוסתר -->
 
-    <input type="submit" value="Sign Up">
+    <input type="submit" value="Sign Up"> <!-- כפתור שליחה של הטופס -->
   </form>
-
-  
 </body>
 </html>
