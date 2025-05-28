@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- מציין שהמסמך כתוב באנגלית -->
 <head>
-  <meta charset="UTF-8">
-  <title>Deni Avdija - Login / Sign Up</title>
-  <script src="LoginScript.js" defer></script>
-  <link rel="stylesheet" href="LoginStyle.css"> <!-- link to css script -->
+  <meta charset="UTF-8"> <!-- קידוד UTF-8, חשוב לתמיכה בכל התווים כולל בעברית במידת הצורך -->
+  <title>Deni Avdija - Login / Sign Up</title> <!-- כותרת הדף כפי שתופיע בטאב של הדפדפן -->
 
+  <script src="LoginScript.js" defer></script> 
+  <!-- קישור לקובץ JavaScript חיצוני, defer דואג שהקובץ ירוץ רק לאחר טעינת הדף -->
+
+  <link rel="stylesheet" href="LoginStyle.css"> <!-- קישור לקובץ CSS לעיצוב הדף -->
 </head>
 
 <body>
 
-    <nav>
-      <a href="Home.html">Home</a> |
-      <a href="Login.html">Login</a> |
-      <a href="Stats.html">Stats</a> |
-      <a href="Photos.html">Photos</a> |
-      <a href="Info.html">Info</a>
-    </nav>
-<header></header>  
-    <h1>Login</h1>
-    <p>Please log in to access personalized content.</p>
-  
-    <form action="#" method="post">
-      <label for="login-name">Name:</label><br>
-      <input type="text" id="login-name" name="login-name" required><br><br>
-  
-      <label for="login-password">Password:</label><br>
-      <input type="password" id="login-password" name="login-password" required><br><br>
-  
-      <input type="submit" value="Login">
-    </form>
-  
-    <p>Not registered yet? <a href="SignUp.html">Sign up here</a></p>
+  <nav>
+    <!-- תפריט ניווט ראשי של האתר, כולל קישורים לדפים מרכזיים -->
+    <a href="Home.html">Home</a> |
+    <a href="Login.html">Login</a> |
+    <a href="Stats.html">Stats</a> |
+    <a href="Photos.html">Photos</a> |
+    <a href="Info.html">Info</a>
+  </nav>
 
-  </body>
+  <header></header> <!-- תגית header ריקה – אולי מיועדת לעיצוב בעתיד או נדרשת לסגנון -->
+
+  <h1>Login</h1> <!-- כותרת ראשית לדף ההתחברות -->
+  <p>Please log in to access personalized content.</p> <!-- הנחיה למשתמש -->
+
+  <form action="#" method="post"> <!-- טופס התחברות; כרגע שולח ליעד מדומה (#) -->
+    <label for="login-name">Name:</label><br>
+    <input type="text" id="login-name" name="login-name" required><br><br>
+    <!-- שדה להזנת שם משתמש עם דרישת חובה (required) -->
+
+    <label for="login-password">Password:</label><br>
+    <input type="password" id="login-password" name="login-password" required><br><br>
+    <!-- שדה להזנת סיסמה, מוסתרת ועם דרישת חובה -->
+
+    <input type="submit" value="Login">
+    <!-- כפתור שליחה לביצוע התחברות -->
+  </form>
+
+  <p>Not registered yet? <a href="SignUp.html">Sign up here</a></p>
+  <!-- קישור לדף ההרשמה עבור משתמשים חדשים -->
+
+</body>
 </html>
