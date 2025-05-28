@@ -1,75 +1,77 @@
 /* רקע כללי של הדף */
 body {
-  margin: 0;
-  font-family: 'Heebo', sans-serif;
-  background: linear-gradient(to right, #f8f8ff, #e0e0ff);
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-  nav {
-    text-align: center;
-    background-color: #292b2c;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    width: 100%;
+    margin: 0; /* ביטול שוליים של הדפדפן */
+    font-family: 'Heebo', sans-serif; /* שימוש בגופן 'Heebo' */
+    background: linear-gradient(to right, #f8f8ff, #e0e0ff); /* רקע מדורג מצבע בהיר לצבע טיפה כהה */
+    color: #333; /* צבע טקסט כללי - אפור כהה */
+    display: flex; /* תצוגה גמישה */
+    flex-direction: column; /* סידור אלמנטים בעמודה (מלמעלה למטה) */
+    align-items: center; /* ממרכז את האלמנטים לרוחב הדף */
   }
   
-/* כותרת עמוד */
-h2 {
-  margin-top: 40px;
-  font-size: 32px;
-  color: #292b2c;
-}
-
-/* עיצוב כללי לטופס */
-form {/*מעצב את קוביית הסקר*/
-  background-color: #fff;
-  padding: 30px;
-  margin-top: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
-  box-sizing: border-box;
-}
-
-/* תוויות (Labels) */
-label {/*מעצב את כיתוב כותרות הסקר*/
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-/* תיבות הטופס*/
-input[type="text"],
-input[type="number"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* כפתור שליחה */
-input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #292b2c;
-  color: white;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: #5a5c5d;
-}
-
+  /* אזור הניווט העליון */
+  nav {
+    text-align: center; /* ממרכז את הטקסט בתפריט */
+    background-color: #292b2c; /* רקע כהה */
+    padding: 10px; /* ריווח פנימי */
+    font-weight: bold; /* טקסט מודגש */
+    font-size: 18px; /* גודל טקסט בתפריט */
+    width: 100%; /* פריסה מלאה לרוחב הדף */
+  }
+  
+  /* כותרת ראשית של הדף */
+  h2 {
+    margin-top: 40px; /* רווח עליון מהקצה העליון של המסך */
+    font-size: 32px; /* גודל אותיות גדול */
+    color: #292b2c; /* צבע כהה תואם לתפריט */
+  }
+  
+  /* עיצוב כללי לטופס */
+  form {
+    background-color: #fff; /* רקע לבן לטופס */
+    padding: 30px; /* ריווח פנימי בתיבה */
+    margin-top: 20px; /* רווח מעל הטופס */
+    border-radius: 15px; /* פינות מעוגלות */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* צל קל סביב התיבה */
+    width: 90%; /* רוחב יחסי למסכים קטנים */
+    max-width: 400px; /* רוחב מרבי */
+    box-sizing: border-box; /* כולל padding בתוך הגדרת הרוחב */
+  }
+  
+  /* כיתוב ליד שדות הטופס */
+  label {
+    display: block; /* תצוגה בשורה נפרדת */
+    margin-bottom: 5px; /* רווח מתחת לתווית */
+    font-weight: bold; /* טקסט מודגש */
+  }
+  
+  /* שדות קלט בטופס */
+  input[type="text"],
+  input[type="number"],
+  input[type="password"] {
+    width: 100%; /* שדה בגודל מלא */
+    padding: 10px; /* ריווח פנימי */
+    margin-bottom: 15px; /* רווח מתחת לשדה */
+    border-radius: 5px; /* פינות מעוגלות */
+    border: 1px solid #ccc; /* גבול אפור בהיר */
+    box-sizing: border-box; /* כולל padding בחישוב הרוחב */
+  }
+  
+  /* כפתור שליחה */
+  input[type="submit"] {
+    width: 100%; /* כפתור בגודל מלא */
+    padding: 10px; /* ריווח פנימי */
+    border: none; /* ללא מסגרת */
+    background-color: #292b2c; /* צבע רקע כהה */
+    color: white; /* טקסט לבן */
+    font-size: 16px; /* גודל טקסט בינוני */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* מחליף את סמן העכבר ליד */
+    transition: background-color 0.3s ease; /* מעבר חלק של צבע רקע בעת הצבעה עם עכבר */
+  }
+  
+  /* אפקט מעבר כשלוחצים על כפתור השליחה */
+  input[type="submit"]:hover {
+    background-color: #5a5c5d; /* שינוי צבע רקע בעת ריחוף עם העכבר */
+  }
+  
