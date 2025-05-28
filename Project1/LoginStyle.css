@@ -1,90 +1,84 @@
 body {
-    margin: 0;
-    font-family: 'Heebo', sans-serif;
-    background: linear-gradient(to right, #f8f8ff, #e0e0ff);
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0; /* מבטל את שוליים ברירת מחדל של הדפדפן */
+    font-family: 'Heebo', sans-serif; /* קובע גופן אחיד לכל הדף */
+    background: linear-gradient(to right, #f8f8ff, #e0e0ff); /* רקע מדורג משמאל לימין בין שני צבעים */
+    color: #333; /* צבע טקסט כללי בדף - אפור כהה */
+    display: flex; /* הצבת מבנה הדף על בסיס פלקס (גמיש) */
+    flex-direction: column; /* מגדיר כיוון תצוגה לעמודה (מלמעלה למטה) */
+    align-items: center; /* ממרכז את התוכן לרוחב הדף */
   }
   
-  nav { /*הוא בעצם עובד על כל מה שתחת נאב.עובד על הניווט למעלה*/
-    text-align: center; 
-    background-color: #292b2c;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    width: 100%;
+  nav {
+    text-align: center; /* ממרכז את הטקסט בתפריט */
+    background-color: #292b2c; /* צבע רקע כהה לתפריט */
+    padding: 10px; /* ריווח פנימי בתוך התפריט */
+    font-weight: bold; /* טקסט עבה יותר */
+    font-size: 18px; /* גודל אות */
+    width: 100%; /* פריסה מלאה לרוחב המסך */
   }
   
-  nav a { /*עובד על הטקסט של הניווט*/
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  nav a {
+    color: white; /* צבע כיתוב לבן */
+    margin: 0 15px; /* ריווח בין קישורים */
+    text-decoration: none; /* הסרת קו תחתון מהקישורים */
+    padding: 8px 12px; /* ריווח פנימי לקישורים */
+    border-radius: 5px; /* פינות מעוגלות לקישור */
+    transition: background-color 0.3s ease; /* מעבר חלק של צבע רקע בעת שינוי */
   }
   
-  nav a:hover {/* הובר זה פעולה שקוראת כהעכבר עובר מעל הכיתוב*/
-    background-color: #5a5c5d;
+  nav a:hover {
+    background-color: #5a5c5d; /* שינוי צבע רקע כשמעבירים עכבר מעל קישור */
   }
   
-  header{
-    background-image: url(https://katzr.net/abae73);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    height: 300px;
-    width: 100%;
-    padding: 50px 20px;
-    color: white;
-    position: relative;
+  header {
+    background-image: url(https://katzr.net/abae73); /* תמונת רקע לאזור הכותרת */
+    background-size: cover; /* התאמת התמונה למלוא הגודל */
+    background-position: center; /* מיקום מרכזי של התמונה */
+    height: 300px; /* גובה קבוע לאזור הכותרת */
+    width: 100%; /* פריסה מלאה לרוחב */
+    padding: 50px 20px; /* ריווח פנימי בחלק העליון */
+    color: white; /* צבע טקסט לבן */
+    position: relative; /* מיקום יחסי - יכול לשמש כבסיס לאלמנטים פנימיים */
+    text-align: center; /* ממרכז את הטקסט בכותרת */
   }
-  
-  
   
   .login-container {
-    max-width: 400px;
-    width: 90%;
-    background-color: #fff;
-    padding: 30px;
-    margin-top: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: left;
+    max-width: 400px; /* רוחב מקסימלי של תיבת ההתחברות */
+    width: 90%; /* רוחב יחסי למסכים קטנים */
+    background-color: #fff; /* רקע לבן */
+    padding: 30px; /* ריווח פנימי */
+    margin-top: 40px; /* רווח מעל התיבה */
+    border-radius: 15px; /* פינות מעוגלות */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* צללת תיבה */
+    text-align: left; /* יישור טקסט לשמאל בתוך התיבה */
   }
   
   .login-container p {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* ממרכז את הטקסט בפסקה */
+    margin-bottom: 20px; /* רווח מתחת לפסקה */
   }
   
- 
-  
   input[type="text"],
-  input[type="password"] {/*חיפוש טייפ ספציפי*/
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  input[type="password"] {
+    width: 100%; /* שדה קלט ברוחב מלא */
+    padding: 10px; /* ריווח פנימי בטקסט */
+    margin-bottom: 15px; /* רווח מתחת לשדה */
+    border-radius: 5px; /* פינות מעוגלות לשדה */
+    border: 1px solid #ccc; /* גבול אפור בהיר */
   }
   
   input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #292b2c;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer; /*כשהעכבר עובר על הכפתור הוא הופך לסמן יד*/
+    width: 100%; /* כפתור ברוחב מלא */
+    padding: 10px; /* ריווח פנימי בכפתור */
+    border: none; /* אין גבול */
+    background-color: #292b2c; /* צבע רקע כהה לכפתור */
+    color: white; /* צבע כיתוב לבן */
+    font-size: 16px; /* גודל טקסט בכפתור */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* סמן עכבר משתנה ליד */
   }
   
   input[type="submit"]:hover {
-    background-color: #5a5c5d;
+    background-color: #5a5c5d; /* שינוי צבע רקע כאשר מצביעים עם העכבר */
   }
-  
-  
   
