@@ -8,9 +8,6 @@
     padding: 50px 20px;
     color: white;
     position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
   }
   
   header::after {
@@ -71,7 +68,6 @@ nav {
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
     background-color: #f4f4f4; /* Light grey background */
 }
 

@@ -30,16 +30,16 @@ body {
     background-color: #5a5c5d;
   }
   
-  head {
+  header{
     background-image: url(https://katzr.net/abae73);
     background-size: cover;
     background-position: center;
-    position: relative;
+    text-align: center;
     height: 300px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 50px 20px;
+    color: white;
+    position: relative;
   }
   
   

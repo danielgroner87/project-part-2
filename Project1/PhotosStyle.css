@@ -80,9 +80,6 @@ nav {
     padding: 50px 20px;
     color: white;
     position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
   }
   
   header::after {
@@ -112,4 +109,9 @@ nav {
 
 header h1 {
   animation: shake 0.5s ease;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }
