@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="StatsStyle.css">
+  <meta charset="UTF-8">
+  <title>Deni Avdija - Statistics</title>
+</head>
+    <body>
+        <nav>
+            <a href="Home.html">Home</a> |
+            <a href="Login.html">Login</a> |
+            <a href="Stats.html">Stats</a> |
+            <a href="Photos.html">Photos</a> |
+            <a href="Info.html">Info</a>
+
+        </nav> 
+
+     <header>
+      <h1 style="font-family: 'Bebas Neue';">Statistics</h1>
+        <div class="subheading">View some of our beloved Deni's recent statistics</div>
+     </header>
+        
+        <div id="basicP">
+        <hr>
+
+        <h2>Basic Stats</h2>
+        <table border="1">
+            <tr>
+            <th>Date</th>
+            <th>Opponent</th>
+            <th>Points</th>
+            <th>Rebounds</th>
+            <th>Assists</th>
+            <th>Minutes</th>
+            </tr>
+            <tr>
+            <td>2025-04-04</td>
+            <td>Chicago Bulls</td>
+            <td>37</td>
+            <td>11</td>
+            <td>5</td>
+            <td>33</td>
+            </tr>
+            <tr>
+            <td>2025-04-01</td>
+            <td>Atlanta Hawks</td>
+            <td>32</td>
+            <td>15</td>
+            <td>10</td>
+            <td>36</td>
+            </tr>
+            <tr>
+            <td>2025-03-20</td>
+            <td>Memphis Grizzlies</td>
+            <td>31</td>
+            <td>16</td>
+            <td>3</td>
+            <td>34</td>
+            </tr>
+        </table>
+        </div>
+
+        <div id="advancedP">
+        <hr>
+
+        <h2 >Advanced Stats</h2>
+        <ul>
+            <li>PER (Player Efficiency Rating): 21.8</li>
+            <li>Plus/Minus: +12.4</li>
+            <li>Effective FG% (eFG%): 58.3%</li>
+            <li>Usage Rate: 24.5%</li>
+            <li>Turnover Ratio: 9.1%</li>
+        </ul>
+
+        <hr>
+        </div>
+        <!-- לשים לב שאת החלק ממתחת יש לעצב עם JavaScript -->
+        <h3>Filter by stat type (placeholder only):</h3>
+        <p>Select a category to view specific statistics:</p>
+
+        <form>
+            <!--שורה שמייצגת את הכפתור של נתונים רגילים.
+            יש בה הגדרות של הערך של הכפתור
+            והגדרה שבלחיצה על הכפתור אז האלמנט
+            שתז שלו הוא בייסיק הוא ייראה ומי שאדוונס יעלם
+            ככה זה על שאר הכפתורים -->
+           <input type="radio" id="basic" name="stat-type" value="basic"
+            onclick="document.getElementById('basicP').style.display='block';
+             document.getElementById('advancedP').style.display='none';">
+            <label for="basic">Basic</label><br>
+
+            <input type="radio" id="advanced" name="stat-type" value="advanced"
+            onclick="document.getElementById('basicP').style.display='none';
+             document.getElementById('advancedP').style.display='block';">
+            <label for="advanced">Advanced</label><br>
+
+            <input type="radio" id="all" name="stat-type" value="all" checked
+            onclick="document.getElementById('basicP').style.display='block';
+            document.getElementById('advancedP').style.display='block';">
+            <label for="all">Show All</label>
+        </form>
+    </body>
+</html>

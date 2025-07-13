@@ -1,0 +1,92 @@
+
+  .flex-container {
+    justify-content: center;
+    flex-direction:row;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 60px;
+    transition: all 0.5s ease;
+  }
+
+  .flex-container img { 
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 300px;
+  border-radius: 10px;  
+  transition: transform 0.3s ease;
+}
+
+.flex-container img:hover {
+  transform: scale(1.05);
+}
+
+nav {
+    text-align: center;
+    background-color: #292b2c;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #5a5c5d;
+  }
+
+  header {
+    background-image: url(https://katzr.net/abae73);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    padding: 50px 20px;
+    color: white;
+    position: relative;
+  }
+  
+
+  
+  header h1, header .subheading {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .subheading {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #eee;
+  }
+
+  @keyframes shake {
+  0%, 100% { transform: translateX(0); } /* בתחילת ובסיום האנימציה - אין הזזה בציר X */
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+
+header h1 {
+  animation: shake 0.5s ease;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
