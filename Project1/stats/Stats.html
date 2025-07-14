@@ -7,20 +7,42 @@
   <title>Deni Avdija - Statistics</title>
 </head>
     <body>
-        <nav>
-            <a href="Home.html">Home</a> |
-            <a href="Login.html">Login</a> |
-            <a href="Stats.html">Stats</a> |
-            <a href="Photos.html">Photos</a> |
-            <a href="Info.html">Info</a>
-
-        </nav> 
-
+  <nav>
+  <a href="/home/Home.html">Home</a>
+  <a href="/stats/Stats.html">Stats</a>
+  <a href="/photos/Photos.html">Photos</a>
+  <a href="/login/Login.html">Login</a>
+  <a href="/info/info.html">Info</a>
+    </nav>
+      
      <header>
       <h1 style="font-family: 'Bebas Neue';">Statistics</h1>
         <div class="subheading">View some of our beloved Deni's recent statistics</div>
      </header>
-        
+         <!-- לשים לב שאת החלק ממתחת יש לעצב עם JavaScript -->
+        <h3>Filter by stat type (placeholder only):</h3>
+        <p>Select a category to view specific statistics:</p>
+         <form>
+            <!--שורה שמייצגת את הכפתור של נתונים רגילים.
+            יש בה הגדרות של הערך של הכפתור
+            והגדרה שבלחיצה על הכפתור אז האלמנט
+            שתז שלו הוא בייסיק הוא ייראה ומי שאדוונס יעלם
+            ככה זה על שאר הכפתורים -->
+           <input type="radio" id="basic" name="stat-type" value="basic"
+            onclick="document.getElementById('basicP').style.display='block';
+             document.getElementById('advancedP').style.display='none';">
+            <label for="basic">Basic</label><br>
+
+            <input type="radio" id="advanced" name="stat-type" value="advanced"
+            onclick="document.getElementById('basicP').style.display='none';
+             document.getElementById('advancedP').style.display='block';">
+            <label for="advanced">Advanced</label><br>
+
+            <input type="radio" id="all" name="stat-type" value="all" checked
+            onclick="document.getElementById('basicP').style.display='block';
+            document.getElementById('advancedP').style.display='block';">
+            <label for="all">Show All</label>
+        </form>
         <div id="basicP">
         <hr>
 
@@ -75,30 +97,8 @@
 
         <hr>
         </div>
-        <!-- לשים לב שאת החלק ממתחת יש לעצב עם JavaScript -->
-        <h3>Filter by stat type (placeholder only):</h3>
-        <p>Select a category to view specific statistics:</p>
+       
 
-        <form>
-            <!--שורה שמייצגת את הכפתור של נתונים רגילים.
-            יש בה הגדרות של הערך של הכפתור
-            והגדרה שבלחיצה על הכפתור אז האלמנט
-            שתז שלו הוא בייסיק הוא ייראה ומי שאדוונס יעלם
-            ככה זה על שאר הכפתורים -->
-           <input type="radio" id="basic" name="stat-type" value="basic"
-            onclick="document.getElementById('basicP').style.display='block';
-             document.getElementById('advancedP').style.display='none';">
-            <label for="basic">Basic</label><br>
-
-            <input type="radio" id="advanced" name="stat-type" value="advanced"
-            onclick="document.getElementById('basicP').style.display='none';
-             document.getElementById('advancedP').style.display='block';">
-            <label for="advanced">Advanced</label><br>
-
-            <input type="radio" id="all" name="stat-type" value="all" checked
-            onclick="document.getElementById('basicP').style.display='block';
-            document.getElementById('advancedP').style.display='block';">
-            <label for="all">Show All</label>
-        </form>
+       
     </body>
 </html>

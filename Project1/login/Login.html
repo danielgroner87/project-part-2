@@ -9,11 +9,11 @@
 
 <body>
 <nav>
-  <a href="../home/Home.html">Home</a>
-  <a href="../stats/Stats.html">Stats</a>
-  <a href="../photos/Photos.html">Photos</a>
-  <a href="../login/Login.html">Login</a>
-  <a href="../info/info.html">Info</a>
+  <a href="/home/Home.html">Home</a>
+  <a href="/stats/Stats.html">Stats</a>
+  <a href="/photos/Photos.html">Photos</a>
+  <a href="/login/Login.html">Login</a>
+  <a href="/info/info.html">Info</a>
 </nav>
 
 <header>
@@ -24,7 +24,7 @@
     <h1>Login</h1>
     <p>Please log in to access personalized content.</p>
 
-    <form action="../login/Login.html" method="post">
+    <!-- <form action="/login" method="post">
       <label for="login-name">Name:</label><br>
       <input type="text" id="login-name" name="login-name" required><br><br>
 
@@ -32,7 +32,16 @@
       <input type="password" id="login-password" name="login-password" required><br><br>
 
       <input type="submit" value="Login">
-    </form>
+    </form> -->
+<form action="/login" method="post">
+  <label for="login-name">Name:</label><br>
+  <input type="text" id="login-name" name="name" required><br><br>
+
+  <label for="login-password">Password:</label><br>
+  <input type="password" id="login-password" name="password" required><br><br>
+
+  <input type="submit" value="Login">
+</form>
 
     <p>Not registered yet? <a href="../signup/SignUp.html">Sign up here</a></p>
 

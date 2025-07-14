@@ -8,29 +8,27 @@
 </head>
 
 <body>
-    <nav>
-    <a href="Home.html">Home</a> |
-    <a href="Login.html">Login</a> |
-    <a href="Stats.html">Stats</a> |
-    <a href="Photos.html">Photos</a> |
-    <a href="Info.html">Info</a> 
-  </nav>
+<nav>
+  <a href="/home/Home.html">Home</a>
+  <a href="/stats/Stats.html">Stats</a>
+  <a href="/photos/Photos.html">Photos</a>
+  <a href="/login/Login.html">Login</a>
+  <a href="/info/info.html">Info</a>
+</nav>
 
   <h2>Sign Up</h2>
-  <form action="#" method="post">
-    <label for="signup-name">Name:</label><br>
-    <input type="text" id="signup-name" name="signup-name" required><br><br>
+<form action="/signup" method="post">
+  <label for="signup-name">Name:</label><br>
+  <input type="text" id="signup-name" name="name" required pattern="[A-Za-z]+" title="English letters only"><br><br>
 
-    <label for="signup-age">Age:</label><br>
-    <input type="number" id="signup-age" name="signup-age" required><br><br>
+  <label for="signup-age">Age:</label><br>
+  <input type="number" id="signup-age" name="age" required min="1"><br><br>
 
-    <label for="signup-password">Password:</label><br>
-    <input type="password" id="signup-password" name="signup-password" required><br><br>
+  <label for="signup-password">Password:</label><br>
+  <input type="password" id="signup-password" name="password" minlength="4" maxlength="9" required placeholder="הסיסמה צריכה להיות בין 4 ל-9 תווים"><br><br>
 
-    
-
-    <input type="submit" value="Sign Up">
-  </form>
+  <input type="submit" value="Sign Up">
+</form>
 
   
 </body>
